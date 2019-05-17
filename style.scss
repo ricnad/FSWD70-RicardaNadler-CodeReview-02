@@ -1,0 +1,197 @@
+$prim-color: #5C1214;
+$sec-color: #131313;
+$ter-color: #DEDEDE;
+$quart-color: #101010;
+$font-col1: #ffffff;
+$font-col2: #DCDCDC;
+$font-col3: #EEEEEE;
+$font-col4: #000000;
+$font-col5: #676767;
+$font1: Roboto, Helvetica;
+$test: green;
+
+header {
+	background-color: $prim-color;
+	height: 100px;
+	width: 100vw;
+	padding: 1em; 
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+
+.header2{
+}
+
+body {
+	background-color: white;
+}
+
+a {
+	color: $font-col3; /* color of hyperlinks */	
+	text-decoration: none; /* remove underlines*/
+}
+
+nav {
+		background-color: $sec-color;
+		font-family: Roboto, Helvetica;
+		font-size: 1em;
+		font-weight: bold;
+		color: white;
+		letter-spacing: 1px;
+		width: 100vw;
+		height: 50px;
+		margin-top: 0px;
+		display: flex;
+	  	align-items: left;
+	  	justify-content: left;
+	}
+
+nav li, footer li {
+	display: inline; /* show list next to eachother */
+    list-style-type: none; /* no bulletpoints */
+	padding: 0.5em; /* space between list elements */
+
+}
+
+ul { 
+	padding-left: 0.6em; 
+}
+
+img.cover {
+	float: left;
+	width:100%;
+	height: 350px;
+	object-fit: cover;
+}
+
+.date {
+	color: $font-col4;
+	text-align: right;
+
+}
+
+.titlenews, .titlepopular{
+	background-color: $ter-color;
+	font-family: $font1;
+	font-size: 1em;
+	font-weight: bold;
+	color: $font-col5;
+	text-indent: 1em;
+	letter-spacing: 1px;
+	width: 100vw;
+	height: 50px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+}
+
+#topnews {
+	border-style: dotted;
+}
+
+#newsblock {
+	border-style: solid ;
+}
+
+#id {
+	border-style: solid;
+	border-color: green;
+}
+
+.boxnews {
+	border-style: solid;
+	border-color: red;
+}
+
+
+.pic{
+	height:80px;
+	display: flex;
+	padding-left: 0.5em;
+	border-style: solid;
+	border-color: blue;
+	background: $quart-color;
+	text-align: left;
+	font-weight: bold;
+	font-family: $font1;
+}
+
+.box1, .box2, .box3, .box4, .box5, .box6 {
+	 float: left;
+	 width: 28%;
+	 height: 400px;
+	 margin-top: 10px;
+	 margin-bottom: 10px;
+	 margin-right: 5%;
+}
+
+.image{
+	display:flex ;
+	align-items: center;
+	justify-content: center;
+	border-style: solid;
+	border-color: $test;
+	margin: 1em;
+}
+
+#main2 {
+	display: flex;
+	margin-bottom: 2em;
+}
+
+.block1 {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	border-style:solid;
+	border-color: orange;
+	width: 90vw;
+}
+
+.block2 {
+	display: flex;
+	flex-wrap: wrap;
+	border-style:solid;
+	border-color: orange;
+	width: 10vw;
+}
+
+.block3, .block4, .block5, .block6 {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: $quart-color;
+	color: $font-col3;
+	font-family: $font1;
+	width: 40vw;
+	height: auto;
+	border-style: solid;
+	border-color: blue;
+	margin: 0em 1em 0em 1em;
+}
+
+.block5, .block6 {
+	margin-top:2em;
+}
+
+footer {
+	background-color: $quart-color;
+	font-size: 0.8em;
+	font-family: $font1;
+	color: $font-col3;
+	padding: 0.5em;
+}
+
+.logofooter{
+	text-align: right;
+	margin: 1.5em;
+}
+
+.copyfooter{
+	text-align: center;
+}

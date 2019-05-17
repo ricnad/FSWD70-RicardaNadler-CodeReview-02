@@ -10,6 +10,11 @@ $font-col5: #676767;
 $font1: Roboto, Helvetica;
 $test: green;
 
+/* Laptop and PC*/
+
+@media only screen and (min-width:480px) {
+
+
 header {
 	background-color: $prim-color;
 	height: 100px;
@@ -19,8 +24,6 @@ header {
 	align-items: center;
 }
 
-.header2{
-}
 
 body {
 	background-color: white;
@@ -72,8 +75,8 @@ ul {
 	letter-spacing: 1px;
 	height: 50px;
 	width: 100%;
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 	padding: 0;
 	display: flex;
 	align-items: center;
@@ -94,14 +97,6 @@ ul {
 	text-align: left;
 	font-weight: bold;
 	font-family: $font1;
-}
-
-#news {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	border-style: solid;
-	border-color: blue;
 }
 
 img.cover {
@@ -148,6 +143,7 @@ img.cover {
 
 #main1, #main2 {
 	display: flex;
+	width:100%;
 	margin-bottom: 2em;
 }
 
@@ -157,13 +153,15 @@ img.cover {
 	flex-direction: row;
 	justify-content: space-between;
 	border-style:solid;
-	border-color: orange;
-	width: 90vw;
+	border-color: black;
+	width: 100%;
 }
 
 .block2 {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap:wrap;
+	flex-direction: row;
+	justify-content: flex-end;
 	border-style:solid;
 	border-color: grey;
 	width: 10vw;
@@ -202,3 +200,41 @@ footer {
 .copyfooter{
 	text-align: center;
 }
+
+
+}
+
+/* Mobile friendly*/
+
+@media only screen and (max-width:600px) {
+
+.header2, .image, #main2{
+	display: none;
+}
+
+nav {
+		justify-content: center;
+	}
+
+.block2{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: $quart-color;
+	color: $font-col3;
+	font-family: $font1;
+	width: 40%;
+	height: auto;
+	border-style: solid;
+	border-color: blue;
+	margin: 0em 1em 0em 1em;}
+
+footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+
+}
+

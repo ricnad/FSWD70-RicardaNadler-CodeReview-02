@@ -1,5 +1,11 @@
+/* Background Colors */
+/* Font Colors */
+/* Font Style */
 /* Laptop and PC*/
 @media only screen and (min-width: 480px) {
+  #main3, #main4 {
+    display: none; }
+
   header {
     background-color: #5C1214;
     height: 100px;
@@ -164,29 +170,47 @@
 
   .copyfooter {
     text-align: center; } }
+.flex-box {
+  display: flex; }
+
+.flex-box, .box {
+  flex: 2;
+  width: 50%; }
+
 /* Mobile friendly*/
 @media only screen and (max-width: 600px) {
-  .header2, .image, #main2 {
+  #main1, #main2, .header2, .date, .image {
     display: none; }
 
-  nav {
-    justify-content: center; }
-
-  .block2 {
+  #main3, #main4 {
     display: flex;
     flex-wrap: wrap;
-    background-color: #101010;
-    color: #EEEEEE;
-    font-family: Roboto, Helvetica;
-    width: 40%;
-    height: auto;
+    border-style: solid;
+    border-color: green; }
+
+  .box7, .box8, .box9, .box10, .box11 {
+    padding: 8px;
+    box-sizing: border-box;
+    height: 200px;
+    flex: 50%;
     border-style: solid;
     border-color: blue;
-    margin: 0em 1em 0em 1em; }
+    font-size: 0.9em; }
 
-  footer {
+  #boxpopular1 {
+    display: flex; }
+
+  img.cover1 {
+    float: left;
+    width: 100%;
+    height: 100px;
+    object-fit: cover; }
+
+  .navfooter, .logofooter, .copyfooter {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center; }
+
+  nav {
     justify-content: center; } }
 
 /*# sourceMappingURL=style.css.map */

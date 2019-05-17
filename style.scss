@@ -1,19 +1,24 @@
+/* Background Colors */
 $prim-color: #5C1214;
 $sec-color: #131313;
 $ter-color: #DEDEDE;
 $quart-color: #101010;
+
+/* Font Colors */
 $font-col1: #ffffff;
 $font-col2: #DCDCDC;
 $font-col3: #EEEEEE;
 $font-col4: #000000;
 $font-col5: #676767;
+
+/* Font Style */
 $font1: Roboto, Helvetica;
-$test: green;
 
 /* Laptop and PC*/
-
 @media only screen and (min-width:480px) {
-
+#main3, #main4 {
+	display:none;
+}
 
 header {
 	background-color: $prim-color;
@@ -137,7 +142,7 @@ img.cover {
 	align-items: center;
 	justify-content: center;
 	border-style: solid;
-	border-color: $test;
+	border-color: green;
 	margin: 1em;
 }
 
@@ -204,37 +209,63 @@ footer {
 
 }
 
+.flex-box {
+	display: flex;
+}
+
+.flex-box, .box {
+	flex:2;
+	width: 50%;
+}
+
+
+
+
+
 /* Mobile friendly*/
 
 @media only screen and (max-width:600px) {
 
-.header2, .image, #main2{
-	display: none;
+#main1, #main2, .header2, .date, .image {
+	display:none;
 }
 
-nav {
-		justify-content: center;
-	}
-
-.block2{
+#main3, #main4 {
 	display: flex;
-	flex-wrap: wrap;
-	background-color: $quart-color;
-	color: $font-col3;
-	font-family: $font1;
-	width: 40%;
-	height: auto;
+	flex-wrap:wrap;
+	border-style: solid;
+	border-color: green;
+}
+
+.box7, .box8, .box9, .box10, .box11 {
+	padding: 8px;
+	box-sizing: border-box;
+	height: 200px;
+	flex: 50%;
 	border-style: solid;
 	border-color: blue;
-	margin: 0em 1em 0em 1em;}
+	font-size: 0.9em;
+}
 
-footer {
+#boxpopular1{
 	display: flex;
-	flex-wrap: wrap;
+}
+
+img.cover1 {
+	float: left;
+	width:100%;
+	height: 100px;
+	object-fit: cover;
+}
+
+.navfooter, .logofooter, .copyfooter{
+	display: flex;
 	justify-content: center;
 }
 
-
+nav {
+	justify-content: center;
+}
 
 }
 
